@@ -30,8 +30,8 @@
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(3., 2.), NO, [[UIScreen mainScreen] scale]);
 
     UIBezierPath *rectanglePath = [UIBezierPath bezierPathWithRect:CGRectMake(0., 0., 3., 2.)];
-
-    [UIColor.grayColor setFill];
+//    [UIColor.grayColor setFill];
+    [[UIColor colorWithRed:209/255.0 green:209/255.0 blue:209/255.0 alpha:1.0] setFill];
     [rectanglePath fill];
 
     UIImage *thumbnail = UIGraphicsGetImageFromCurrentImageContext();
@@ -44,7 +44,8 @@
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(3., 2.), NO, [[UIScreen mainScreen] scale]);
 
     UIBezierPath *rectanglePath = [UIBezierPath bezierPathWithRect:CGRectMake(0., 0., 3., 2.)];
-    [UIColor.redColor setFill];
+//    [UIColor.redColor setFill];
+    [[UIColor colorWithRed:0/255.0 green:142/255.0 blue:78/255.0 alpha:1.0] setFill];
     [rectanglePath fill];
 
     UIImage *thumbnail = UIGraphicsGetImageFromCurrentImageContext();
@@ -55,7 +56,8 @@
 
 - (UIImage *)handlerImage {
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(28., 28.), NO, [[UIScreen mainScreen] scale]);
-    UIColor *color = [UIColor redColor];
+//    UIColor *color = [UIColor redColor];
+    UIColor *color = [UIColor whiteColor];
 
     UIBezierPath *ovalPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0., 0., 28., 28.)];
     [color setFill];
